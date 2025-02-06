@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client"
 
 declare global {
@@ -16,7 +17,7 @@ interface IUseCanvasProps {
 }
 
 export const useCanvas = (init: (canvas: fabric.Canvas) => Promise<void> | void, saveState = true, deps =[]) => {
-  const elementRef = useRef<MutableRefObject<HTMLCanvasElement| null>>(null)
+  const elementRef = useRef<HTMLCanvasElement | null>(null)
   const fc = useRef<null | fabric.Canvas >(null)
   const data = useRef(null)
 

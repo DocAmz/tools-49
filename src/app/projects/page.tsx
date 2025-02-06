@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Beaker, ChevronDown, ChevronRight, ExternalLink, Image, Palette, Pencil, Type } from "lucide-react"
+import { Beaker, ChevronDown, ChevronRight, ExternalLink, ImageIcon, Palette, Pencil, Type } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
@@ -36,7 +36,7 @@ type TtoolCategories = {
 const toolCategories: TtoolCategories[] = [
   {
     name: "Images",
-    icon: <Image />,
+    icon: <ImageIcon />,
     tools: [
       {
         name: "Aspect Ratio Calculator",

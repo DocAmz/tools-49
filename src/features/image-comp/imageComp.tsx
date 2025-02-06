@@ -144,6 +144,7 @@ export default function ImageComparisonTool() {
     if (leftImage && rightImage) {
       compareImages();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [threshold]);
 
   useEffect(() => {
